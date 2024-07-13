@@ -70,6 +70,10 @@ export default function Page(/*{ params }: { params: { id: number } }*/) {
             formData.fecha_programada = moment(formData.fecha_programada).format('YYYY/MM/DD')
         }
 
+        if(bultos.length < 1) {
+            return message.error('Debe agregar al menos un bulto!');
+        }
+
         bultos.map((v) => {
             if(formData.bultos === undefined) {
                 formData.bultos = [];
