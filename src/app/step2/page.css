@@ -1,0 +1,30 @@
+.seccionMedidas .InputInicial .ant-input-group-addon {
+    border-top-right-radius: 0!important;
+    border-bottom-right-radius: 0!important;
+}
+
+.seccionMedidas .InputMedio .ant-input {
+    border-top-left-radius: 0!important;
+    border-bottom-left-radius: 0!important;
+
+    border-left: 0!important;
+}
+
+.seccionMedidas .InputMedio .ant-input-group-addon {
+    border-top-right-radius: 0!important;
+    border-bottom-right-radius: 0!important;
+}
+
+.seccionMedidas .InputFinal .ant-input {
+    border-top-left-radius: 0!important;
+    border-bottom-left-radius: 0!important;
+    border-left: 0!important;
+}
+
+.seccionMedidas input {
+    border-right: 0!important;
+}
+
+.seccionMedidas .ant-input-group-addon {
+    background-color: #fff!important;
+}
