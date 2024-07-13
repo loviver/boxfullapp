@@ -333,7 +333,15 @@ export default function Page(/*{ params }: { params: { id: number } }*/) {
                                             offset: 16, span: 8
                                         }
                                     }}>
-                                        <Button size="large" className="w-full" type="transparent">
+                                        <Button size="large" className="w-full" type="transparent" onClick={() => {
+                                            setBultos((prevBultos) => {
+                                                const updatedBultos = [...prevBultos];
+
+                                                delete updatedBultos[index];
+
+                                                return updatedBultos;
+                                            });
+                                        }}>
                                             <DeleteFilled style={{ color: 'red', fontSize: 25 }}/>
                                         </Button>
                                     </Form.Item>
